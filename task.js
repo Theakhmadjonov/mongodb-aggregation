@@ -1,6 +1,6 @@
-use school
+// use school
 
-## Ma'lumotlar bazasi tuzilishi
+//  Ma'lumotlar bazasi tuzilishi
 
 db.createCollection("students")
 db.createCollection("subjects")
@@ -8,9 +8,9 @@ db.createCollection("teachers")
 db.createCollection("grades")
 db.createCollection("attendance")
 
-### 1. `students` (O'quvchilar)
+// 1. `students` (O'quvchilar)
 
-<!-- db.students.insertMany([
+db.students.insertMany([
 {
 "_id": ObjectId("5f8a776c1234567890123456"),
 "student_id": "ST001",
@@ -123,13 +123,13 @@ db.createCollection("attendance")
 },
 "enrolled_date": ISODate("2021-09-01T00:00:00Z")
 }
-]) -->
+]) 
 
-### 2. `subjects` (Fanlar)
+// 2. `subjects` (Fanlar)
 
-<!-- db.subjects.insertMany([
+ db.subjects.insertMany([
 {
-"\_id": ObjectId("5f8a776c123456789012345d"),
+"_id": ObjectId("5f8a776c123456789012345d"),
 "subject_id": "SUB001",
 "name": "Matematika",
 "category": "Aniq fanlar",
@@ -137,7 +137,7 @@ db.createCollection("attendance")
 "required_materials": ["Darslik", "Masalalar to'plami", "Kalkulyator"]
 },
 {
-"\_id": ObjectId("5f8a776c123456789012345e"),
+"_id": ObjectId("5f8a776c123456789012345e"),
 "subject_id": "SUB002",
 "name": "Fizika",
 "category": "Aniq fanlar",
@@ -145,7 +145,7 @@ db.createCollection("attendance")
 "required_materials": ["Darslik", "Laboratoriya jihozlari"]
 },
 {
-"\_id": ObjectId("5f8a776c123456789012345f"),
+"_id": ObjectId("5f8a776c123456789012345f"),
 "subject_id": "SUB003",
 "name": "Informatika",
 "category": "Aniq fanlar",
@@ -153,7 +153,7 @@ db.createCollection("attendance")
 "required_materials": ["Darslik", "Kompyuter", "Dasturlash muhiti"]
 },
 {
-"\_id": ObjectId("5f8a776c1234567890123460"),
+"_id": ObjectId("5f8a776c1234567890123460"),
 "subject_id": "SUB004",
 "name": "Ingliz tili",
 "category": "Chet tillari",
@@ -161,7 +161,7 @@ db.createCollection("attendance")
 "required_materials": ["Darslik", "Lug'at", "Audio materiallar"]
 },
 {
-"\_id": ObjectId("5f8a776c1234567890123461"),
+"_id": ObjectId("5f8a776c1234567890123461"),
 "subject_id": "SUB005",
 "name": "Biologiya",
 "category": "Tabiiy fanlar",
@@ -169,20 +169,20 @@ db.createCollection("attendance")
 "required_materials": ["Darslik", "Laboratoriya jihozlari"]
 },
 {
-"\_id": ObjectId("5f8a776c1234567890123462"),
+"_id": ObjectId("5f8a776c1234567890123462"),
 "subject_id": "SUB006",
 "name": "Tarix",
 "category": "Ijtimoiy fanlar",
 "hours_per_week": 3,
 "required_materials": ["Darslik", "Tarixiy xaritalar"]
 }
-]) -->
+]) 
 
-### 3. `teachers` (O'qituvchilar)
+// 3. `teachers` (O'qituvchilar)
 
-<!-- db.teachers.insertMany([
+db.teachers.insertMany([
 {
-"\_id": ObjectId("5f8a776c1234567890123463"),
+"_id": ObjectId("5f8a776c1234567890123463"),
 "teacher_id": "TCH001",
 "full_name": "Karimov Botir",
 "subjects": ["SUB001"],
@@ -195,7 +195,7 @@ db.createCollection("attendance")
 "education": "Oliy toifali o'qituvchi"
 },
 {
-"\_id": ObjectId("5f8a776c1234567890123464"),
+"_id": ObjectId("5f8a776c1234567890123464"),
 "teacher_id": "TCH002",
 "full_name": "Alimova Nilufar",
 "subjects": ["SUB002"],
@@ -208,7 +208,7 @@ db.createCollection("attendance")
 "education": "1-toifali o'qituvchi"
 },
 {
-"\_id": ObjectId("5f8a776c1234567890123465"),
+"_id": ObjectId("5f8a776c1234567890123465"),
 "teacher_id": "TCH003",
 "full_name": "Usmonov Javohir",
 "subjects": ["SUB003"],
@@ -221,7 +221,7 @@ db.createCollection("attendance")
 "education": "2-toifali o'qituvchi"
 },
 {
-"\_id": ObjectId("5f8a776c1234567890123466"),
+"_id": ObjectId("5f8a776c1234567890123466"),
 "teacher_id": "TCH004",
 "full_name": "Smith John",
 "subjects": ["SUB004"],
@@ -234,7 +234,7 @@ db.createCollection("attendance")
 "education": "Oliy toifali o'qituvchi"
 },
 {
-"\_id": ObjectId("5f8a776c1234567890123467"),
+"_id": ObjectId("5f8a776c1234567890123467"),
 "teacher_id": "TCH005",
 "full_name": "Karimova Sevara",
 "subjects": ["SUB005"],
@@ -247,7 +247,7 @@ db.createCollection("attendance")
 "education": "2-toifali o'qituvchi"
 },
 {
-"\_id": ObjectId("5f8a776c1234567890123468"),
+"_id": ObjectId("5f8a776c1234567890123468"),
 "teacher_id": "TCH006",
 "full_name": "Mahmudov Akbar",
 "subjects": ["SUB006"],
@@ -259,13 +259,13 @@ db.createCollection("attendance")
 },
 "education": "Oliy toifali o'qituvchi"
 }
-]) -->
+]) 
 
-### 4. `grades` (Baholar)
+// 4. `grades` (Baholar)
 
-<!-- db.grades.insertMany([
+db.grades.insertMany([
 {
-"\_id": ObjectId("5f8a776c1234567890123469"),
+"_id": ObjectId("5f8a776c1234567890123469"),
 "student_id": "ST001",
 "subject_id": "SUB001",
 "teacher_id": "TCH001",
@@ -275,7 +275,7 @@ db.createCollection("attendance")
 "test_scores": [92, 88, 95]
 },
 {
-"\_id": ObjectId("5f8a776c123456789012346a"),
+"_id": ObjectId("5f8a776c123456789012346a"),
 "student_id": "ST001",
 "subject_id": "SUB002",
 "teacher_id": "TCH002",
@@ -285,7 +285,7 @@ db.createCollection("attendance")
 "test_scores": [85, 90, 82]
 },
 {
-"\_id": ObjectId("5f8a776c123456789012346b"),
+"_id": ObjectId("5f8a776c123456789012346b"),
 "student_id": "ST001",
 "subject_id": "SUB003",
 "teacher_id": "TCH003",
@@ -295,7 +295,7 @@ db.createCollection("attendance")
 "test_scores": [98, 95, 97]
 },
 {
-"\_id": ObjectId("5f8a776c123456789012346c"),
+"_id": ObjectId("5f8a776c123456789012346c"),
 "student_id": "ST002",
 "subject_id": "SUB004",
 "teacher_id": "TCH004",
@@ -305,7 +305,7 @@ db.createCollection("attendance")
 "test_scores": [82, 86, 85]
 },
 {
-"\_id": ObjectId("5f8a776c123456789012346d"),
+"_id": ObjectId("5f8a776c123456789012346d"),
 "student_id": "ST002",
 "subject_id": "SUB006",
 "teacher_id": "TCH006",
@@ -315,7 +315,7 @@ db.createCollection("attendance")
 "test_scores": [96, 98, 97]
 },
 {
-"\_id": ObjectId("5f8a776c123456789012346e"),
+"_id": ObjectId("5f8a776c123456789012346e"),
 "student_id": "ST003",
 "subject_id": "SUB001",
 "teacher_id": "TCH001",
@@ -325,7 +325,7 @@ db.createCollection("attendance")
 "test_scores": [75, 70, 78]
 },
 {
-"\_id": ObjectId("5f8a776c123456789012346f"),
+"_id": ObjectId("5f8a776c123456789012346f"),
 "student_id": "ST003",
 "subject_id": "SUB005",
 "teacher_id": "TCH005",
@@ -335,7 +335,7 @@ db.createCollection("attendance")
 "test_scores": [94, 92, 95]
 },
 {
-"\_id": ObjectId("5f8a776c1234567890123470"),
+"_id": ObjectId("5f8a776c1234567890123470"),
 "student_id": "ST004",
 "subject_id": "SUB002",
 "teacher_id": "TCH002",
@@ -345,7 +345,7 @@ db.createCollection("attendance")
 "test_scores": [65, 70, 68]
 },
 {
-"\_id": ObjectId("5f8a776c1234567890123471"),
+"_id": ObjectId("5f8a776c1234567890123471"),
 "student_id": "ST004",
 "subject_id": "SUB004",
 "teacher_id": "TCH004",
@@ -355,7 +355,7 @@ db.createCollection("attendance")
 "test_scores": [92, 95, 94]
 },
 {
-"\_id": ObjectId("5f8a776c1234567890123472"),
+"_id": ObjectId("5f8a776c1234567890123472"),
 "student_id": "ST005",
 "subject_id": "SUB001",
 "teacher_id": "TCH001",
@@ -365,7 +365,7 @@ db.createCollection("attendance")
 "test_scores": [98, 100, 97]
 },
 {
-"\_id": ObjectId("5f8a776c1234567890123473"),
+"_id": ObjectId("5f8a776c1234567890123473"),
 "student_id": "ST005",
 "subject_id": "SUB003",
 "teacher_id": "TCH003",
@@ -375,7 +375,7 @@ db.createCollection("attendance")
 "test_scores": [100, 98, 99]
 },
 {
-"\_id": ObjectId("5f8a776c1234567890123474"),
+"_id": ObjectId("5f8a776c1234567890123474"),
 "student_id": "ST006",
 "subject_id": "SUB001",
 "teacher_id": "TCH001",
@@ -385,7 +385,7 @@ db.createCollection("attendance")
 "test_scores": [85, 82, 88]
 },
 {
-"\_id": ObjectId("5f8a776c1234567890123475"),
+"_id": ObjectId("5f8a776c1234567890123475"),
 "student_id": "ST006",
 "subject_id": "SUB002",
 "teacher_id": "TCH002",
@@ -395,7 +395,7 @@ db.createCollection("attendance")
 "test_scores": [88, 92, 90]
 },
 {
-"\_id": ObjectId("5f8a776c1234567890123476"),
+"_id": ObjectId("5f8a776c1234567890123476"),
 "student_id": "ST007",
 "subject_id": "SUB005",
 "teacher_id": "TCH005",
@@ -405,7 +405,7 @@ db.createCollection("attendance")
 "test_scores": [76, 72, 78]
 },
 {
-"\_id": ObjectId("5f8a776c1234567890123477"),
+"_id": ObjectId("5f8a776c1234567890123477"),
 "student_id": "ST007",
 "subject_id": "SUB006",
 "teacher_id": "TCH006",
@@ -414,11 +414,11 @@ db.createCollection("attendance")
 "semester": "Kuz-2023",
 "test_scores": [92, 90, 95]
 }
-]) -->
+]) 
 
-### 5. `attendance` (Davomatlar)
+// 5. `attendance` (Davomatlar)
 
-<!-- db.attendance.insertMany([
+db.attendance.insertMany([
 {
 "_id": ObjectId("5f8a776c1234567890123478"),
 "student_id": "ST001",
@@ -531,11 +531,11 @@ db.createCollection("attendance")
 "status": "late",
 "note": "5 daqiqa kech qoldi"
 }
-]) -->
+]) 
 
-### Topshiriq 1: $group operatori bilan o'quvchilarni sinflarga guruhlash
+// Topshiriq 1: $group operatori bilan o'quvchilarni sinflarga guruhlash
 
-<!-- db.students.aggregate([
+db.students.aggregate([
   {
     $group: {
       _id: "$grade",
@@ -547,9 +547,9 @@ db.createCollection("attendance")
   }
 ]) -->
 
-### Topshiriq 2: $group va accumulator operatorlari
+// Topshiriq 2: $group va accumulator operatorlari
 
-<!-- db.grades.aggregate([
+db.grades.aggregate([
   {
     $group: {
       _id: "$subject_id",
@@ -574,11 +574,11 @@ db.createCollection("attendance")
       average_grade: 1
     }
   }
-]) -->
+]) 
 
-### Topshiriq 3: $lookup bilan o'quvchilar va baholari
+// Topshiriq 3: $lookup bilan o'quvchilar va baholari
 
-<!-- db.students.aggregate([
+db.students.aggregate([
   {
     $lookup: {
       from: "grades",
@@ -599,11 +599,11 @@ db.createCollection("attendance")
       average_grade: "$grades_info.average_grade"
     }
   }
-]) -->
+]) 
 
-### Topshiriq 4: $lookup bilan o'qituvchilar va fanlar
+// Topshiriq 4: $lookup bilan o'qituvchilar va fanlar
 
-<!-- db.teachers.aggregate([
+db.teachers.aggregate([
   {
     $lookup: {
       from: "subjects",
@@ -625,11 +625,11 @@ db.createCollection("attendance")
       }
     }
   }
-]); -->
+]); 
 
-### Topshiriq 5: $group va $lookup kombinatsiyasi
+// Topshiriq 5: $group va $lookup kombinatsiyasi
 
-<!-- db.students.aggregate([
+db.students.aggregate([
   {
     $lookup: {
       from: "grades",
@@ -661,11 +661,11 @@ db.createCollection("attendance")
   {
     $sort: { _id: 1 }
   }
-]); -->
+]); 
 
-### Topshiriq 6: Davomat va baholar analitikasi
+// Topshiriq 6: Davomat va baholar analitikasi
 
-<!-- db.attendance.aggregate([
+db.attendance.aggregate([
   {
     $lookup: {
       from: "grades",
@@ -695,11 +695,11 @@ db.createCollection("attendance")
   {
     $sort: { _id: 1 }
   }
-]); -->
+]); 
 
-### Topshiriq 7: Fanlar kategoriyasi bo'yicha analitika
+// Topshiriq 7: Fanlar kategoriyasi bo'yicha analitika
 
-<!-- db.subjects.aggregate([
+db.subjects.aggregate([
   {
     $lookup: {
       from: "grades",
@@ -723,4 +723,4 @@ db.createCollection("attendance")
   {
     $sort: { _id: 1 }
   }
-]) -->
+]) 
